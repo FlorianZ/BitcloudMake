@@ -61,6 +61,8 @@ SECTIONS
     KEEP (*(.init7))
     *(.init8)
     KEEP (*(.init8))
+	*(.init9)
+    KEEP (*(.init9))
 
     *(.text.main)
     KEEP (*(.text*main))
@@ -116,11 +118,5 @@ SECTIONS
     BYTE(0xff)
     . = . + LENGTH(eeprom)-1;
   } > eeprom
-  
-  /DISCARD/ :
-  {
-    *(.init9)
-    *(.fini9)
-  }
 
 }
