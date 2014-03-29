@@ -61,7 +61,7 @@ SECTIONS
     KEEP (*(.init7))
     *(.init8)
     KEEP (*(.init8))
-	*(.init9)
+    *(.init9)
     KEEP (*(.init9))
 
     *(.text.main)
